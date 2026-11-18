@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca del desarrollador - Hospital Santa Fe</title>
+    <link rel="icon" href="imagenes/LOGO.jpg" type="image/jpg" sizes="16x16">
+        <meta name="author" content="Litzy Hazhley Miguel Santiago">
+    <!-- Bootstrap 5 & Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        /* Efecto de sombra y elevación para los iconos */
+        .efecto-icono {
+            transition: transform 0.3s ease, filter 0.3s ease;
+            display: inline-block;
+            font-size: 2.5rem;
+        }
+        
+        .efecto-icono:hover {
+            transform: translateY(-15px);
+            filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.9));
+        }
+
+        /* Animación para los elementos del menú */
+        .nav-item {
+            transition: transform 0.3s ease;
+        }
+
+        .nav-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .hover-pill:hover {
+            background-color: #d1e3f5;
+            border-radius: 50rem;
+        }
+
+        body {
+            background-color: #8cb4f0; 
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-md navbar-light shadow-sm sticky-top py-3" style="background-color: #8cb4f0;">
+        <div class="container-fluid px-4">
+            <!-- Logotipo y Nombre -->
+            <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="#">
+                <img src="imagenes/ICONO.png" alt="Logo" height="28" class="me-2" onerror="this.style.display='none'">
+                <span>HOSPITAL SANTA FE</span>
+            </a>
+            
+       
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contenedor -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2 mt-2 mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="index.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="especialidades.html">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="citas.html">Citas Disponibles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="contacto.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="ubi.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active bg-primary text-white rounded-pill px-3 py-1 text-center shadow-sm" aria-current="page" href="acerca.html">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container my-5 flex-grow-1">
+        
+        <!-- Encabezado de la página -->
+        <header class="text-center mb-5">
+            <h2 class="display-4 fw-bold text-dark">Acerca del Desarrollador</h2>
+            <p class="text-white fw-semibold fs-5">Conoce a la mente creativa detrás de la arquitectura digital del hospital</p>
+        </header>
+
+        <!-- Sección de Presentación con Imagen y Descripción -->
+        <section class="bg-white p-4 p-md-5 rounded-4 shadow-sm mb-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <h3 class="text-primary fw-bold mb-3">Pasión por la tecnología y la salud</h3>
+                    <p class="text-secondary leading-relaxed fs-6">
+                        Formada con una sólida base técnica en tecnologías de la información, combina su pasión por la programación y el diseño de sistemas con un profundo compromiso hacia la salud digital. Su enfoque se centra en construir interfaces responsivas, funcionales y accesibles, garantizando que cada paciente y especialista experimente una navegación fluida, segura y eficiente en la plataforma del Hospital Santa Fe.
+                    </p>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img class="img-fluid rounded-4 shadow-sm border border-light" src="imagenes/lit.jpeg" alt="Foto del Desarrollador" style="max-height: 320px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Ingeniería y Desarrollo de Software (Tarjeta Detallada) -->
+        <article class="bg-white p-4 p-md-5 rounded-4 shadow-sm mb-5">
+            <h3 class="text-primary fw-bold mb-4 text-center">
+                <i class="fa-solid fa-code me-2"></i>Ingeniería y Desarrollo de Software
+            </h3>
+            <p class="text-secondary text-center mb-5">
+                Detrás de cada funcionalidad, diseño responsivo y sistema de citas de nuestro portal, se encuentra el talento y la dedicación de nuestro equipo de ingeniería.
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 bg-light p-4 rounded-4 shadow-sm">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-4 text-center">
+                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center shadow" style="width: 100px; height: 100px; font-size: 2.5rem;">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="fw-bold text-dark mb-1">Lic. en Tecnologías de la Información</h4>
+                                <p class="text-primary fw-semibold small mb-3">Desarrolladora de Software & Líder de Innovación Tecnológica</p>
+                                <p class="text-secondary small mb-0 leading-relaxed">
+                                    A través de la optimización de bases de datos y el desarrollo de herramientas interactivas, impulsa la modernización tecnológica del centro médico con creatividad, rigor analítico y una visión centrada en el bienestar humano.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="container mt-5 mb-2">
+  <div class="row">
+    <div class="col">
+<div class="card" style="width: 18rem;">
+ 
+  <img src="imagenes/lit.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Litzy Hazhley Miguel Santiago</h5>
+    <p class="card-text">Mas información visitar sus Redes Sociales</p>
+<a href="https://www.instagram.com/haz_lizz?utm_source=qr" target="_blank" class="btn text-white fw-semibold px-4 py-2 rounded-pill shadow-sm" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">
+    <i class="fa-brands fa-instagram me-2"></i> Sígueme en Instagram
+</a>
+    </a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4 mt-16 border-top border-secondary">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-0 small text-white-50">© 2026 Hospital Santa Fe - Departamento de Ingeniería y Desarrollo Hospitalario. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-white-50 small text-decoration-none me-3">Aviso de Privacidad</a>
+                    <a href="#" class="text-white-50 small text-decoration-none">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

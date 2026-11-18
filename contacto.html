@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Hospital Santa Fe</title>
+    <meta name="author" content="Litzy Hazhley Miguel Santiago">
+    <link rel="icon" href="imagenes/LOGO.jpg" type="image/jpg" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            teal: '#0d9488'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Media query para pantallas medianas y grandes */
+        @media (min-width: 768px) {
+            #carouselExampleIndicators {
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            } 
+            #carouselExampleIndicators .carousel-item img {
+                height: 500px;
+                object-fit: contain;
+            }
+        }
+
+       /*  menú */
+  .nav-item {
+    transition: transform 0.3s ease;
+  }
+
+  .nav-item:hover {
+    transform: translateY(-3px);
+  }
+
+  .hover-pill:hover {
+    background-color: #d1e3f5;
+    border-radius: 50rem;
+  }
+  body {
+  background-color: #8cb4f0; 
+}
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+ <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white py-3 border-bottom shadow-sm sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="#">
+                <img src="imagenes/ICONO.png" alt="Logo" height="28" class="me-2" onerror="this.style.display='none'">
+                <span>HOSPITAL SANTA FE</span>
+            </a>
+            
+   
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2 mt-2 mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="index.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="especialidades.html">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="citas.html">Citas Disponibles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active bg-primary text-white rounded-pill px-3 py-1 text-center shadow-sm" aria-current="page" href="contacto.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="ubi.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="acercade.html">Acerca de</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <section id="contacto" class="relative pt-14 pb-16 bg-gradient-to-b from-medical-50 via-white to-slate-50 border-b border-slate-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs font-semibold bg-medical-100 text-medical-800 mb-5 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Centro de Operaciones y Desarrollo • Estado del Sistema: 99.98% Operativo</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+                Contacto y <span class="bg-gradient-to-r from-medical-600 to-medical-teal bg-clip-text text-transparent">Soporte de Ingeniería</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed">
+                ¿Tienes dudas sobre el portal de citas médicas, encontraste algún fallo técnico o deseas visitar nuestro campus tecnológico? Nuestro equipo de desarrolladores hospitalarios está listo para ayudarte.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tarjetas de Información  -->
+    <section class="py-12 -mt-6 relative z-20 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Tarjeta 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-slate-200/40 hover:border-medical-200 transition group">
+                    <div class="w-12 h-12 rounded-2xl bg-medical-50 text-medical-600 group-hover:bg-medical-600 group-hover:text-white flex items-center justify-center text-xl mb-4 transition">
+                        <i class="fa-solid fa-building-shield"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Oficinas Centrales Dev</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Blvd. Tecnológico #402, Torre Innovación Médica, Piso 4.<br>
+                        Parque Industrial del Norte, C.P. 88730, Reynosa, Tamaulipas.
+                    </p>
+                    <button onclick="copyText('Blvd. Tecnológico #402, Torre Innovación Médica, Piso 4, Reynosa, Tamps.')" class="mt-4 inline-flex items-center space-x-1.5 text-xs font-semibold text-medical-600 hover:text-medical-800 transition">
+                        <i class="fa-regular fa-copy"></i>
+                        <span>Copiar dirección</span>
+                    </button>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-slate-200/40 hover:border-medical-200 transition group">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 group-hover:bg-sky-600 group-hover:text-white flex items-center justify-center text-xl mb-4 transition">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Líneas de Soporte</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        <strong>Mesa Técnica:</strong> +52 (899) 555-0194<br>
+                        <strong>Emergencias TI:</strong> +52 (899) 555-0199<br>
+                        <span class="text-xs text-slate-400">Ext. 401 (Portal Pacientes)</span>
+                    </p>
+                    <button onclick="copyText('+52 899 555 0194')" class="mt-4 inline-flex items-center space-x-1.5 text-xs font-semibold text-medical-600 hover:text-medical-800 transition">
+                        <i class="fa-regular fa-copy"></i>
+                        <span>Copiar teléfono</span>
+                    </button>
+                </div>
+
+                <!-- Tarjeta 3-->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-slate-200/40 hover:border-medical-200 transition group">
+                    <div class="w-12 h-12 rounded-2xl bg-teal-50 text-teal-600 group-hover:bg-teal-600 group-hover:text-white flex items-center justify-center text-xl mb-4 transition">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Correos Oficiales</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        <strong>Soporte:</strong> soporte.ti@hospitalsantafe.mx<br>
+                        <strong>Bugs:</strong> bugs@hospitalsantafe.mx<br>
+                        <strong>Visitas:</strong> campus@hospitalsantafe.mx
+                    </p>
+                    <button onclick="copyText('soporte.ti@hospitalsantafe.mx')" class="mt-4 inline-flex items-center space-x-1.5 text-xs font-semibold text-medical-600 hover:text-medical-800 transition">
+                        <i class="fa-regular fa-copy"></i>
+                        <span>Copiar correo</span>
+                    </button>
+                </div>
+
+                <!-- Tarjeta 4-->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-slate-200/40 hover:border-medical-200 transition group">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white flex items-center justify-center text-xl mb-4 transition">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Horarios de Atención</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        <strong>Oficinas y Visitas:</strong><br>
+                        Lun - Vie: 8:00 AM – 6:30 PM<br>
+                        <strong>Guardia de Servidores:</strong> 24/7/365
+                    </p>
+                    <span class="mt-4 inline-flex items-center space-x-1.5 text-xs font-semibold text-emerald-600">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Recepción abierta</span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4 mt-16 border-top border-secondary">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-0 small text-white-50">© 2026 Hospital Santa Fe - Departamento de Ingeniería y Desarrollo Hospitalario. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-white-50 small text-decoration-none me-3">Aviso de Privacidad</a>
+                    <a href="#" class="text-white-50 small text-decoration-none">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para copiar al portapapeles -->
+    <script>
+        function copyText(texto) {
+            navigator.clipboard.writeText(texto).then(() => {
+                alert("Copiado al portapapeles: " + texto);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - Hospital Santa Fe</title>
+    <link rel="icon" href="imagenes/LOGO.jpg" type="image/jpg" sizes="16x16">
+    <meta name="author" content="Litzy Hazhley Miguel Santiago">
+    <!-- Bootstrap 5 & Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .navbar {
+            background-color: #8cb4f0 !important;
+        }
+        @media (max-width: 767.98px) {
+            .navbar-collapse {
+                background-color: #8cb4f0 !important;
+                padding: 10px;
+                border-radius: 8px;
+            }
+        }
+        .nav-item {
+            transition: transform 0.3s ease;
+        }
+        .nav-item:hover {
+            transform: translateY(-2px);
+        }
+        .hover-pill:hover {
+            background-color: #d1e3f5;
+            border-radius: 50rem;
+        }
+        body {
+            background-color: #8cb4f0; 
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Menú de navegación  -->
+    <nav class="navbar navbar-expand-md navbar-light shadow-sm sticky-top py-3">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="#">
+                <img src="imagenes/ICONO.png" height="26" class="me-2" alt="Logo" onerror="this.style.display='none'">
+                HOSPITAL SANTA FE
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2 mt-3 mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="index.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="especialidades.html">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="citas.html">Citas Disponibles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="contacto.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active bg-primary text-white rounded-pill px-3 py-1 text-center shadow-sm" aria-current="page" href="ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary hover-pill px-3 py-1 text-center" href="acercade.html">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="text-center my-4"> 
+        <h1 class="fw-bold text-dark">¿Cómo llegar a Hospital Santa Fe?</h1> 
+         </header>
+
+    <!-- Contenido Principal -->
+    <main class="container my-4 flex-grow-1">
+        
+        <!-- Sección de Información y Mapa Simulado -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+                <article class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
+                    <h4 class="text-primary fw-bold mb-3"><i class="fa-solid fa-map-location-dot me-2"></i>Dirección y Referencias</h4>
+                    <p class="text-secondary">
+                        Nos ubicamos estratégicamente en el corazón de la zona médica y tecnológica de la ciudad para garantizar un acceso rápido y seguro para todos nuestros pacientes y visitantes.
+                    </p>
+                    <ul class="list-unstyled text-secondary mt-3">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-location-dot text-primary mt-1 me-2 fs-5"></i>
+                            <span><strong>Domicilio:</strong> Blvd. Tecnológico #402, Torre Innovación Médica, Parque Industrial del Norte, C.P. 88730, Reynosa, Tamps.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-car text-primary mt-1 me-2 fs-5"></i>
+                            <span><strong>Estacionamiento:</strong> Contamos con estacionamiento subterráneo techado gratuito para pacientes con citas agendadas y valet parking disponible en la entrada principal.</span>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fa-solid fa-wheelchair text-primary mt-1 me-2 fs-5"></i>
+                            <span><strong>Accesibilidad:</strong> Rampas de acceso universal, elevadores amplios y préstamo de sillas de ruedas en recepción principal y área de urgencias.</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- Simulador interactivo de rutas -->
+                <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <h4 class="text-primary fw-bold mb-3"><i class="fa-solid fa-route me-2"></i>Simulador de Rutas en Auto</h4>
+                        <p class="text-secondary small">Selecciona tu punto de partida en Reynosa para calcular el tiempo estimado de llegada al hospital:</p>
+                        
+                        <div class="mb-3">
+                            <label for="puntoPartida" class="form-label fw-semibold text-dark">Punto de partida:</label>
+                            <select id="puntoPartida" class="form-select border-primary-subtle">
+                                <option value="centro">Centro de Reynosa (Plaza Principal)</option>
+                                <option value="puente">Puente Internacional Reynosa-Hidalgo</option>
+                                <option value="periferico">Blvd. Colosio / Libramiento</option>
+                                <option value="zone_sur">Zona Sur (Blvd. Morelos)</option>
+                            </select>
+                        </div>
+
+                        <button onclick="calcularRuta()" class="btn btn-primary w-100 py-2 fw-semibold shadow-sm">
+                            <i class="fa-solid fa-calculator me-1"></i> Calcular Tiempo de Llegada
+                        </button>
+                    </div>
+
+                    <!-- Resultado de la simulación -->
+                    <div id="resultadoRuta" class="mt-4 p-3 bg-light rounded-3 border border-info-subtle text-center d-none">
+                        <h6 class="text-dark fw-bold mb-1" id="tituloRuta">Resultado:</h6>
+                        <p class="text-primary fw-bold fs-5 mb-0" id="tiempoRuta">-- min (aprox. -- km)</p>
+                        <small class="text-muted" id="consejoRuta">Tráfico fluido recomendado por Blvd. Tecnológico.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjetas de Información Adicional (Transporte Público y Horarios) -->
+        <section class="py-2">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="bg-white p-4 rounded-4 shadow-sm h-100 border border-light">
+                        <div class="text-primary fs-3 mb-3"><i class="fa-solid fa-bus"></i></div>
+                        <h5 class="fw-bold text-dark">Transporte Público</h5>
+                        <p class="small text-secondary mb-0">
+                            Las rutas de microbuses urbanos que conectan con el Blvd. Tecnológico y Parque Industrial del Norte dejan a los usuarios a menos de 50 metros de la entrada principal de la Torre Médica.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white p-4 rounded-4 shadow-sm h-100 border border-light">
+                        <div class="text-primary fs-3 mb-3"><i class="fa-regular fa-clock"></i></div>
+                        <h5 class="fw-bold text-dark">Horarios de Acceso a Ubicación</h5>
+                        <p class="small text-secondary mb-0">
+                            <strong>Urgencias y Hospitalización:</strong> Abierto 24/7.<br>
+                            <strong>Área de Consultas y Oficinas Dev:</strong> Lunes a Viernes de 8:00 AM a 6:30 PM.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+        <footer class="bg-dark text-white py-4 mt-16 border-top border-secondary">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-0 small text-white-50">© 2026 Hospital Santa Fe - Departamento de Ingeniería y Desarrollo Hospitalario. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-white-50 small text-decoration-none me-3">Aviso de Privacidad</a>
+                    <a href="#" class="text-white-50 small text-decoration-none">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script del Simulador de Rutas -->
+    <script>
+        function calcularRuta() {
+            const select = document.getElementById('puntoPartida');
+            const valor = select.value;
+            const cajaResultado = document.getElementById('resultadoRuta');
+            const tituloR = document.getElementById('tituloRuta');
+            const tiempoR = document.getElementById('tiempoRuta');
+            const consejoR = document.getElementById('consejoRuta');
+
+            cajaResultado.classList.remove('d-none');
+
+            if (valor === 'centro') {
+                tituloR.innerText = "Ruta desde el Centro de Reynosa:";
+                tiempoR.innerText = "15 a 20 minutos (6.5 km)";
+                consejoR.innerText = "Tránsito moderado. Se recomienda tomar Blvd. Morelos hacia el norte.";
+            } else if (valor === 'puente') {
+                tituloR.innerText = "Ruta desde Puente Internacional:";
+                tiempoR.innerText = "12 a 18 minutos (5.2 km)";
+                consejoR.innerText = "Acceso directo conectando con las avenidas principales de la zona industrial.";
+            } else if (valor === 'periferico') {
+                tituloR.innerText = "Ruta desde Blvd. Colosio / Libramiento:";
+                tiempoR.innerText = "8 a 12 minutos (4.0 km)";
+                consejoR.innerText = "Excelente opción rápida y fluida para llegar sin semáforos prolongados.";
+            } else if (valor === 'zone_sur') {
+                tituloR.innerText = "Ruta desde Zona Sur (Blvd. Morelos):";
+                tiempoR.innerText = "5 a 10 minutos (3.1 km)";
+                consejoR.innerText = "Trayecto corto. Gira en la desviación hacia el Parque Industrial del Norte.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Contenedor principal de secciones para dar espacio y márgenes */
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    text-align: left; /* Alineado a la izquierda para una lectura fluida */
+}
+
+/* Encabezados principales */
+h1 {
+    color: #1a365d;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Párrafos descriptivos */
+p {
+    font-size: 16px;
+    font-weight: normal; /* Evita que todo el texto sea negrita */
+    line-height: 1.6;    /* Espaciado cómodo entre líneas */
+    color: #4a5568;
+    text-align: left;    /* Mejor legibilidad en bloques de texto */
+    margin-bottom: 15px;
+}
+
+/* Estilo para las imágenes (como la foto de los doctores) */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;     /* Bordes ligeramente redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    display: block;
+    margin: 20px auto;      /* Centrada automáticamente */
+}
+/* Ajusta el tamaño del logo en la barra de navegación */
+.navbar-brand img, .logo {
+    max-height: 40px; /* Cambia este valor según el tamaño que prefieras (ej. 40px a 60px) */
+    width: auto;
+    display: inline-block;
+}
+
+/* Listas de especialidades */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #2d3748;
+}
+/* Centra el bloque de la lista y alinea el texto hacia la izquierda para que no se desordene */
+article ul {
+    display: table;     /* Hace que la lista actúe como bloque ajustable */
+    margin: 0 auto;     /* Centra la lista horizontalmente en la página */
+    text-align: left;   /* Mantiene el texto alineado de forma natural */
+}
+
+article li {
+    margin-bottom: 5px;
+}
+
+
+/* Contenedor general del formulario para centrarlo y darle estructura */
+.formulario-cita-container {
+    max-width: 750px;
+    margin: 40px auto;
+    background: #98c2da;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de sección dentro del formulario */
+.formulario-cita-container h2, 
+.formulario-cita-container h4 {
+    color: #1a365d;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+/* Mejorar el diseño de las etiquetas y campos */
+.formulario-cita-container label {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.formulario-cita-container .form-control, 
+.formulario-cita-container .form-select {
+    border-radius: 8px;
+    border: 1px solid #98c2da;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al hacer clic en los inputs */
+.formulario-cita-container .form-control:focus, 
+.formulario-cita-container .form-select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Botón de envío estilizado */
+.btn-agendar {
+    background-color: #2563eb;
+    color: #98c2da;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-agendar:hover {
+    background-color: #1d4ed8;
+}
+/* Cambia el color de fondo de la tarjeta del formulario */
+.col-lg-9.bg-white {
+    background-color: #4c80b4 !important; /* Cambia este código de color por el que prefieras */
+}
+.navbar-collapse.collapse {
+    visibility: visible !important;
+}
+.navbar {
+    background-color: #8cb4f0 !important;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        background-color: #8cb4f0 !important;
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
